@@ -1,18 +1,30 @@
-# Salesforce DX Project: Next Steps
+# BrightTech Solutions: Sales Performance "Mission Control"
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This project democratizes insights by delivering a user-centric "mission control" app in Salesforce, surfacing actionable intelligence for the management team.
 
-## How Do You Plan to Deploy Your Changes?
+## 1. Business Challenge
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Management was "flying blind." The data they needed existed within Salesforce, but it was difficult to access, aggregate, and interpret. They wasted time digging for information instead of taking action.
 
-## Configure Your Salesforce DX Project
+## 2. My Role & Strategic Solution
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+As a Junior Salesforce Strategist, my goal was to **democratize insights**. I designed a user-centric "mission control" center to surface actionable intelligence tailored specifically for the management team.
 
-## Read All About It
+### Phase 1: Persona-Based Design
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- **Business Goal:** Understood what "sales performance" truly meant to a manager and identified the 3-5 key metrics they needed to see daily.
+- **Platform Strategy:** Designed a dedicated **Lightning App** rather than just a dashboard. This approach allowed for a fully controlled user experience, from navigation to a purpose-built home page.
+
+### Phase 2: Configuration & User Experience (UX)
+
+- **Business Goal:** Make the application intuitive, fast, and easy to use.
+- **Platform Strategy:** Used the **Lightning App Builder** to construct the app with "clicks, not code," ensuring it is easy for future admins to maintain. The focus was on a clean UI, logical navigation, and a custom home page presenting the most critical charts "above the fold."
+
+### Phase 3: Access & Adoption
+
+- **Business Goal:** Ensure the *right* people see the *right* data, securely.
+- **Platform Strategy:** Managed access through **Profiles and Permission Sets** as a key governance step to enforce data security and visibility rules.
+
+## 3. Strategist's Note
+
+> This solution demonstrates a customer-centric approach by treating the internal manager as the customer. By using standard reporting and the Lightning App Builder, we delivered a powerful, zero-code solution that empowers leaders and drives user adoption without incurring technical debt.

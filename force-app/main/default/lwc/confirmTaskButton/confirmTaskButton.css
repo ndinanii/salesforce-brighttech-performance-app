@@ -1,0 +1,31 @@
+/* We target the :host, which is our component's "shadow" boundary.
+This allows us to provide new values for the CSS custom properties
+(styling hooks) that the child lightning-button uses.
+*/
+:host(.purple-gradient) {
+    /* --- Base State --- */
+    
+    /* We're using a gradient, which is a background-image */
+    --slds-c-button-brand-background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    
+    /* We set the plain background to none */
+    --slds-c-button-brand-background: none; 
+    
+    /* Make the border transparent or match the gradient */
+    --slds-c-button-brand-border-color: transparent;
+    
+    /* Ensure text is readable */
+    --slds-c-button-brand-color-foreground: #ffffff;
+
+    
+    /* --- Hover State --- */
+    --slds-c-button-brand-background-image-hover: linear-gradient(to right, #5a0eae 0%, #1e66d9 100%); /* Slightly darker gradient */
+    --slds-c-button-brand-background-hover: none;
+    --slds-c-button-brand-border-color-hover: transparent;
+    --slds-c-button-brand-color-foreground-hover: #ffffff;
+
+    /* --- Active (Click) State --- */
+    --slds-c-button-brand-background-image-active: linear-gradient(to right, #4a0c92 0%, #1a5ac7 100%); /* Even darker gradient */
+    --slds-c-button-brand-background-active: none;
+    --slds-c-button-brand-border-color-active: transparent;
+}

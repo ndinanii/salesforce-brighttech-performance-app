@@ -29,7 +29,43 @@ As a Junior Salesforce Strategist, my goal was to **democratize insights**. I de
 
 > This solution demonstrates a customer-centric approach by treating the internal manager as the customer. By using standard reporting and the Lightning App Builder, we delivered a powerful, zero-code solution that empowers leaders and drives user adoption without incurring technical debt.
 
-## 4. Requirements Elicitation
+## 4. Engineering Philosophy: The Colt Protocol
+
+This project follows **The Colt Protocol** methodology, a systematic 6-stage approach to Salesforce development:
+
+### The 6-Stage Pipeline
+
+1. **Requirements Elicitation (The "Why" & "What")** - Define goals, personas, and Definition of Done (DoD)
+2. **User-Centric Design (The "Look & Feel")** - Strict adherence to Lightning Design System (SLDS)
+3. **Business Process Mapping (The "Flow")** - Synchronous vs. Asynchronous processing decisions
+4. **Data Modeling & ERD (The "Skeleton")** - Security-first schema design with OWD and sharing rules
+5. **Defining Testable Criteria (The "Safety Net")** - Test-Driven Development (TDD) with 85%+ coverage
+6. **Clear Documentation (The "Legacy")** - ApexDoc standards and structured project artifacts
+
+### 📂 Project Documentation
+
+Comprehensive documentation following The Colt Protocol is available in the `_documentation/` folder:
+
+```
+_documentation/
+├── 00_Project_Brief/          # Project Charter & Stakeholder Register
+├── 01_Requirements/           # User Stories & Functional Specs
+├── 02_Design/                 # UX Wireframes, UI Mockups, SLDS Theme Map
+├── 03_Architecture/           # Process Flows, ERD, Security Matrix
+├── 04_Testing/                # Test Plan, Data Factory Spec, UAT Scripts
+└── 05_Manuals/                # Admin Guide & User Guide
+```
+
+### Salesforce Best Practices Applied
+
+- **No-Code First**: Leveraged Lightning App Builder and standard features to minimize technical debt
+- **Security by Design**: Implemented proper profiles and permission sets for access control
+- **SLDS Compliance**: All UI components follow Lightning Design System standards
+- **Governance**: Clear documentation ensures maintainability and knowledge transfer
+
+---
+
+## 5. Requirements Elicitation
 
 ### Business Needs
 - **Stakeholders**: Sales managers at BrightTech Solutions.
